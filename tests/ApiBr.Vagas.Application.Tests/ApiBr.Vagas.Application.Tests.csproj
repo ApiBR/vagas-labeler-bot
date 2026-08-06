@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <PackageReference Include="coverlet.collector" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" />
+    <PackageReference Include="xunit" />
+    <PackageReference Include="xunit.runner.visualstudio" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Using Include="Xunit" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\ApiBr.Vagas.Application\ApiBr.Vagas.Application.csproj" />
+    <ProjectReference Include="..\..\src\ApiBr.Vagas.Domain\ApiBr.Vagas.Domain.csproj" />
+    <ProjectReference Include="..\..\src\ApiBr.Vagas.Contracts\ApiBr.Vagas.Contracts.csproj" />
+    <ProjectReference Include="..\..\src\ApiBr.Vagas.Configuration\ApiBr.Vagas.Configuration.csproj" />
+    <ProjectReference Include="..\..\src\ApiBr.Vagas.Labeling\ApiBr.Vagas.Labeling.csproj" />
+    <ProjectReference Include="..\..\src\ApiBr.Vagas.Inference\ApiBr.Vagas.Inference.csproj" />
+  </ItemGroup>
+
+</Project>

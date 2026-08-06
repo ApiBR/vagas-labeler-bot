@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\ApiBr.Vagas.Domain\ApiBr.Vagas.Domain.csproj" />
+    <ProjectReference Include="..\ApiBr.Vagas.Contracts\ApiBr.Vagas.Contracts.csproj" />
+    <ProjectReference Include="..\ApiBr.Vagas.Configuration\ApiBr.Vagas.Configuration.csproj" />
+    <ProjectReference Include="..\ApiBr.Vagas.Labeling\ApiBr.Vagas.Labeling.csproj" />
+    <ProjectReference Include="..\ApiBr.Vagas.Inference\ApiBr.Vagas.Inference.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+</Project>

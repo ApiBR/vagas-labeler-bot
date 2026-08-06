@@ -1,0 +1,48 @@
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+indent_style = space
+
+[*.cs]
+indent_size = 4
+
+[*.{yml,yaml,json,json5}]
+indent_size = 2
+
+[*.md]
+trim_trailing_whitespace = false
+
+[*.cs]
+# StyleCop: documentation is intentionally not enforced — this codebase writes docs only where the WHY is non-obvious.
+# SA0001 is StyleCop's own "can't analyze docs because GenerateDocumentationFile is off" diagnostic — silence it too.
+dotnet_diagnostic.SA0001.severity = none
+dotnet_diagnostic.SA1600.severity = none
+dotnet_diagnostic.SA1601.severity = none
+dotnet_diagnostic.SA1602.severity = none
+dotnet_diagnostic.SA1633.severity = none
+dotnet_diagnostic.SA1636.severity = none
+dotnet_diagnostic.SA1638.severity = none
+dotnet_diagnostic.SA1639.severity = none
+dotnet_diagnostic.SA1640.severity = none
+dotnet_diagnostic.SA1641.severity = none
+dotnet_diagnostic.SA1642.severity = none
+dotnet_diagnostic.SA1643.severity = none
+
+# StyleCop: file-scoped namespaces and top-level statements are the target style — the rules that fight them are off.
+dotnet_diagnostic.SA1200.severity = none
+dotnet_diagnostic.SA1516.severity = none
+
+# StyleCop: this team's naming/ordering opinions differ from the defaults on these specific points.
+dotnet_diagnostic.SA1101.severity = none
+dotnet_diagnostic.SA1309.severity = none
+dotnet_diagnostic.SA1633.severity = none
+
+# C# language style
+csharp_style_namespace_declarations = file_scoped:warning
+csharp_using_directive_placement = outside_namespace:warning
+csharp_prefer_braces = true:warning
+dotnet_sort_system_directives_first = true

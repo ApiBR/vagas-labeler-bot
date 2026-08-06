@@ -1,0 +1,29 @@
+<Project>
+
+  <PropertyGroup>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+    <CentralPackageTransitivePinningEnabled>true</CentralPackageTransitivePinningEnabled>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Build tooling -->
+    <PackageVersion Include="GitVersion.MsBuild" Version="6.8.2" />
+    <!-- 1.1.118 (the last stable release) predates C# records and throws AD0001 on them; the beta is the de facto version for modern C#. -->
+    <PackageVersion Include="StyleCop.Analyzers" Version="1.2.0-beta.556" />
+    <PackageVersion Include="SonarAnalyzer.CSharp" Version="10.31.0.145097" />
+
+    <!-- Hosting -->
+    <PackageVersion Include="Microsoft.Extensions.Hosting" Version="10.0.10" />
+    <PackageVersion Include="Microsoft.AspNetCore.OpenApi" Version="10.0.10" />
+    <!-- Transitive pin: Microsoft.AspNetCore.OpenApi 10.0.10 drags in a Microsoft.OpenApi 2.0.0 with a known high-severity advisory (GHSA-v5pm-xwqc-g5wc); pin to the patched 2.x line. -->
+    <PackageVersion Include="Microsoft.OpenApi" Version="2.11.0" />
+
+    <!-- Testing -->
+    <PackageVersion Include="Microsoft.AspNetCore.Mvc.Testing" Version="10.0.10" />
+    <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="18.8.1" />
+    <PackageVersion Include="xunit" Version="2.9.3" />
+    <PackageVersion Include="xunit.runner.visualstudio" Version="3.1.5" />
+    <PackageVersion Include="coverlet.collector" Version="10.0.1" />
+  </ItemGroup>
+
+</Project>
