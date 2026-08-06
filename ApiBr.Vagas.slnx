@@ -1,0 +1,26 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/ApiBr.Vagas.Api/ApiBr.Vagas.Api.csproj" />
+    <Project Path="src/ApiBr.Vagas.Application/ApiBr.Vagas.Application.csproj" />
+    <Project Path="src/ApiBr.Vagas.Configuration/ApiBr.Vagas.Configuration.csproj" />
+    <Project Path="src/ApiBr.Vagas.Contracts/ApiBr.Vagas.Contracts.csproj" />
+    <Project Path="src/ApiBr.Vagas.Domain/ApiBr.Vagas.Domain.csproj" />
+    <Project Path="src/ApiBr.Vagas.Inference/ApiBr.Vagas.Inference.csproj" />
+    <Project Path="src/ApiBr.Vagas.Infrastructure/ApiBr.Vagas.Infrastructure.csproj" />
+    <Project Path="src/ApiBr.Vagas.Labeling/ApiBr.Vagas.Labeling.csproj" />
+    <Project Path="src/ApiBr.Vagas.Webhook/ApiBr.Vagas.Webhook.csproj" />
+    <Project Path="src/ApiBr.Vagas.Worker/ApiBr.Vagas.Worker.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/ApiBr.Vagas.Application.Tests/ApiBr.Vagas.Application.Tests.csproj" />
+    <Project Path="tests/ApiBr.Vagas.Configuration.Tests/ApiBr.Vagas.Configuration.Tests.csproj" />
+    <Project Path="tests/ApiBr.Vagas.Inference.Tests/ApiBr.Vagas.Inference.Tests.csproj" />
+    <Project Path="tests/ApiBr.Vagas.Integration.Tests/ApiBr.Vagas.Integration.Tests.csproj" />
+    <Project Path="tests/ApiBr.Vagas.Labeling.Tests/ApiBr.Vagas.Labeling.Tests.csproj" />
+  </Folder>
+  <Folder Name="/tools/">
+    <Project Path="tools/ClassifierBench/ClassifierBench.csproj" />
+    <Project Path="tools/ConfigLinter/ConfigLinter.csproj" />
+    <Project Path="tools/CorpusFetcher/CorpusFetcher.csproj" />
+  </Folder>
+</Solution>

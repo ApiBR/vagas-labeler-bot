@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>dotnet-ApiBr.Vagas.Worker-a0e1916c-433e-4bbc-a19f-1e73c4e74a32</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ApiBr.Vagas.Application\ApiBr.Vagas.Application.csproj" />
+    <ProjectReference Include="..\ApiBr.Vagas.Infrastructure\ApiBr.Vagas.Infrastructure.csproj" />
+    <ProjectReference Include="..\ApiBr.Vagas.Contracts\ApiBr.Vagas.Contracts.csproj" />
+  </ItemGroup>
+</Project>
